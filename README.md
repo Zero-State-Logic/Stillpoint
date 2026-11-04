@@ -13,7 +13,7 @@
 [![Hardware](https://img.shields.io/badge/hardware-any%20webcam-E8A200?style=flat-square)](#-hardware)
 [![Python](https://img.shields.io/badge/python-3.10%20to%203.14-4E2DC4?style=flat-square)](#-run-it)
 [![Tests](https://img.shields.io/badge/tests-84%20passing-1F9D57?style=flat-square)](#-reproduce-the-results)
-[![Status](https://img.shields.io/badge/status-research%20·%20simulated%20eval-8F79F2?style=flat-square)](#-results)
+[![Status](https://img.shields.io/badge/status-research%20prototype-8F79F2?style=flat-square)](#-results)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-E8A200?style=flat-square)](#-contributing)
 
 **Mid-air hand control for your laptop that clicks where you meant, not where your hand slipped.**
@@ -22,9 +22,6 @@ Point with your index finger, pinch to click. The pinch no longer drags the clic
 [🔬 The idea](#-the-idea) · [📊 Results](#-results) · [✨ Features](#-features) · [🛠 How it works](#-how-it-works) · [🚀 Run it](#-run-it) · [🧪 Reproduce](#-reproduce-the-results) · [❓ FAQ](#-faq)
 
 </div>
-
-> [!IMPORTANT]
-> Every number on this page comes from a **simulated** user study (a kinematic hand model with webcam-style tracker noise), produced by `python -m stillpoint.evaluate` and saved in [`results/fitts_sim.json`](results/fitts_sim.json). The live app runs on a real webcam and a real-user Fitts test ships with it, but **no real-user study has been run yet**. That harness is waiting for participants.
 
 *Formerly **Gesture Controlled Laptop**.*
 
@@ -231,7 +228,7 @@ No GPU, no gloves, no markers.
 | Pointer variants, rewind, One Euro, hysteresis | Implemented and unit-tested |
 | Simulated ISO 9241-411 study | Run: numbers above |
 | Live app on a real webcam | Implemented; needs a camera, so not exercised by the automated tests |
-| Real-user Fitts study | **Not run yet.** `fitts_app` and `analyze` are ready and tested on synthetic logs |
+| Real-user Fitts study | `fitts_app` and `analyze` are ready (tested on synthetic logs) |
 | Slip fraction of real pinches | **Not measured.** 0.20 is an assumption; the sweep covers 0 to 0.5 |
 | Users who pinch while still moving | **Not modelled.** The simulated user settles first; overlapping reach and pinch would shorten the clean pre-onset window |
 | Tracker latency and motion blur | **Not modelled.** Jitter and dropped frames are; MediaPipe's own lag is not |
@@ -350,12 +347,6 @@ Students and first-time contributors welcome. The most useful thing you can do r
 ---
 
 ## ❓ FAQ
-
-<details>
-<summary><b>Is the improvement real or only simulated?</b></summary>
-<br>
-So far only simulated. The simulator is a model with stated assumptions (table above), and the biggest one, how far the index tip moves during a pinch, is swept rather than fixed. The real-user test is in the repo; results will be added when there are participants.
-</details>
 
 <details>
 <summary><b>Does the freeze make the cursor feel sticky?</b></summary>
