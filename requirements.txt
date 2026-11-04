@@ -1,11 +1,17 @@
-# Python 3.10 recommended for best MediaPipe compatibility on Windows.
-# 3.11 also works; avoid 3.12+ until MediaPipe ships matching wheels.
+# STILLPOINT
+# The evaluation, the simulator and the tests need only numpy.
+# The live app and the live Fitts test also need the rest.
+#
+# Tested on Python 3.14 with numpy 2.5, opencv-python 4.13, mediapipe 0.10.32.
+# The original project ran on Python 3.10 with mediapipe 0.10.14; both work:
+# builds with mp.solutions use it directly, newer builds use the HandLandmarker
+# task and need hand_landmarker.task (see README, "Run it").
 
-opencv-python==4.10.0.84
-mediapipe==0.10.14
-numpy==1.26.4
-pyautogui==0.9.54
+numpy>=1.26
+opencv-python>=4.8
+mediapipe>=0.10.14
+pyautogui>=0.9.54
 
-# Windows-only: system volume control via Core Audio APIs
-pycaw==20240210 ; sys_platform == "win32"
-comtypes==1.4.5 ; sys_platform == "win32"
+# Windows-only: system volume control via Core Audio
+pycaw>=20240210 ; sys_platform == "win32"
+comtypes>=1.4.5 ; sys_platform == "win32"

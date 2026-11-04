@@ -9,3 +9,15 @@ env/
 *.log
 .DS_Store
 Thumbs.db
+
+# build outputs
+build/
+*.obj
+*.exe
+*.dll
+*.lib
+*.exp
+
+# local data: model file you download, real-user logs
+models/
+logs/

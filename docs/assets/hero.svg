@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-labelledby="t d">
+  <title id="t">STILLPOINT</title>
+  <desc id="d">Mid-air hand pointing: a jittery cursor trace settles onto a target; a pinch would drag the click off target, but the rewind places the click dead centre.</desc>
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#D3D7DB" stroke-width="1"/>
+    </pattern>
+    <pattern id="grid5" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M120 0H0V120" fill="none" stroke="#B8BEC4" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#6C4CF0" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#6C4CF0" stop-opacity="0"/>
+    </radialGradient>
+    <path id="route" d="M548 318 C 600 312, 652 286, 704 254 S 778 214, 800 210"/>
+  </defs>
+
+  <!-- bench -->
+  <rect x="1" y="1" width="1198" height="418" rx="14" fill="#F7F8F9" stroke="#D3D7DB" stroke-width="2"/>
+  <rect x="1" y="1" width="1198" height="418" rx="14" fill="url(#grid)" opacity=".55"/>
+  <rect x="1" y="1" width="1198" height="418" rx="14" fill="url(#grid5)" opacity=".6"/>
+  <g fill="none" stroke="#B8BEC4" stroke-width="2">
+    <path d="M18 42V18H42"/><path d="M1158 18H1182V42"/><path d="M1182 378V402H1158"/><path d="M42 402H18V378"/>
+  </g>
+
+  <!-- wordmark: a target mark, then the name -->
+  <g font-family="'Chakra Petch','Segoe UI','Helvetica Neue',Arial,sans-serif">
+    <g transform="translate(84 132)" fill="none" stroke="#14171A" stroke-width="2.4">
+      <circle r="19"/><circle r="10"/>
+      <path d="M0 -26V-21M0 21V26M-26 0H-21M21 0H26" stroke-linecap="round"/>
+      <circle r="4.5" fill="#6C4CF0" stroke="none"/>
+    </g>
+    <text x="122" y="150" font-size="50" font-weight="700" fill="#14171A" textLength="300" lengthAdjust="spacingAndGlyphs">STILLPOINT<tspan fill="#6C4CF0">.</tspan></text>
+  </g>
+  <g font-family="'JetBrains Mono','Cascadia Mono',Consolas,'Courier New',monospace" fill="#4A5157">
+    <text x="66" y="194" font-size="12.5" textLength="374" lengthAdjust="spacingAndGlyphs">MID-AIR POINTING · PINCH-ONSET REWIND · ONE EURO</text>
+    <text x="66" y="230" font-size="15.5" fill="#14171A" font-family="'Inter','Segoe UI','Helvetica Neue',Arial,sans-serif" textLength="374" lengthAdjust="spacingAndGlyphs">Clicks where you meant, not where your hand slipped.</text>
+  </g>
+
+  <!-- chips -->
+  <g font-family="'JetBrains Mono','Cascadia Mono',Consolas,'Courier New',monospace" font-size="13" font-weight="700">
+    <g transform="translate(66 262)">
+      <rect width="112" height="34" rx="6" fill="#6C4CF0"/><circle cx="16" cy="17" r="4" fill="#fff"/>
+      <text x="28" y="22" fill="#fff" textLength="72" lengthAdjust="spacingAndGlyphs">REWIND</text>
+    </g>
+    <g transform="translate(188 262)">
+      <rect width="112" height="34" rx="6" fill="#FDFDFE" stroke="#E8A200" stroke-width="1.6"/><circle cx="16" cy="17" r="4" fill="#E8A200"/>
+      <text x="28" y="22" fill="#9A6B00" textLength="72" lengthAdjust="spacingAndGlyphs">1€ FILTER</text>
+    </g>
+    <g transform="translate(310 262)">
+      <rect width="130" height="34" rx="6" fill="#FDFDFE" stroke="#14171A" stroke-width="1.6"/><circle cx="16" cy="17" r="4" fill="#14171A"/>
+      <text x="28" y="22" fill="#14171A" textLength="90" lengthAdjust="spacingAndGlyphs">ISO 9241-411</text>
+    </g>
+  </g>
+
+  <!-- scope: raw fingertip (amber) vs Stillpoint cursor (violet) -->
+  <g transform="translate(66 318)">
+    <rect width="374" height="62" rx="5" fill="#FDFDFE" stroke="#D3D7DB"/>
+    <path d="M0 31H374M94 0V62M187 0V62M281 0V62" stroke="#ECEEF0"/>
+    <path d="M0 50 L12 47 L22 52 L34 46 L46 49 L58 44 L70 40 L82 33 L94 27 L106 22 L118 20 L130 17 L142 19 L154 15 L166 18 L178 14 L190 17 L202 15 L214 18 L226 14 L238 17 L250 15 L262 30 L274 41 L286 43 L298 41 L310 30 L322 18 L334 15 L346 17 L358 14 L374 16" fill="none" stroke="#E8A200" stroke-width="2" stroke-linejoin="round" stroke-dasharray="560" stroke-dashoffset="560">
+      <animate attributeName="stroke-dashoffset" values="560;0;0" keyTimes="0;.7;1" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M0 49 C 40 49, 70 44, 100 26 S 150 16, 190 16 L 374 16" fill="none" stroke="#6C4CF0" stroke-width="2.4" stroke-dasharray="560" stroke-dashoffset="560">
+      <animate attributeName="stroke-dashoffset" values="560;0;0" keyTimes="0;.72;1" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <text x="256" y="56" font-family="'JetBrains Mono','Cascadia Mono',Consolas,'Courier New',monospace" font-size="9" fill="#9A6B00" textLength="56" lengthAdjust="spacingAndGlyphs">PINCH SLIP</text>
+  </g>
+
+  <!-- pointing panel -->
+  <g font-family="'JetBrains Mono','Cascadia Mono',Consolas,'Courier New',monospace" font-size="11" fill="#828A90">
+    <rect x="470" y="52" width="460" height="316" rx="10" fill="#FDFDFE" stroke="#D3D7DB"/>
+    <text x="486" y="78" textLength="210" lengthAdjust="spacingAndGlyphs">SCREEN · ISO TARGET W=40 PX</text>
+
+    <!-- target -->
+    <circle cx="800" cy="210" r="86" fill="url(#glow)"/>
+    <g fill="none" stroke="#B8BEC4" stroke-width="1.4">
+      <circle cx="800" cy="210" r="62"/><circle cx="800" cy="210" r="40"/>
+    </g>
+    <circle cx="800" cy="210" r="20" fill="#EFEBFE" stroke="#6C4CF0" stroke-width="2"/>
+    <path d="M800 140V160M800 260V280M730 210H750M850 210H870" stroke="#B8BEC4" stroke-width="1.4"/>
+
+    <!-- raw tracker path, jittery -->
+    <path d="M548 318 L560 313 L566 318 L578 309 L588 312 L600 302 L608 307 L622 295 L630 299 L644 286 L652 290 L666 276 L674 281 L688 266 L696 270 L708 254 L718 259 L730 244 L738 248 L752 232 L760 236 L772 223 L780 227 L790 216 L796 219 L802 212" fill="none" stroke="#E8A200" stroke-width="1.6" stroke-linejoin="round" opacity=".9"/>
+    <!-- filtered path -->
+    <use href="#route" fill="none" stroke="#6C4CF0" stroke-width="2.6" stroke-linecap="round"/>
+
+    <!-- ghost click: where the pinch would have dragged it -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.48;.56;.92;1" dur="4s" repeatCount="indefinite"/>
+      <path d="M800 210L836 244" stroke="#E8A200" stroke-width="1.6" stroke-dasharray="3 4"/>
+      <circle cx="840" cy="248" r="11" fill="none" stroke="#E8A200" stroke-width="2" stroke-dasharray="4 3"/>
+      <path d="M833 241L847 255M847 241L833 255" stroke="#E8A200" stroke-width="1.6"/>
+      <text x="856" y="276" fill="#9A6B00" textLength="62" lengthAdjust="spacingAndGlyphs">GHOST CLICK</text>
+    </g>
+
+    <!-- real click ripple, dead centre -->
+    <circle cx="800" cy="210" r="6" fill="none" stroke="#6C4CF0" stroke-width="3" opacity="0">
+      <animate attributeName="r" values="6;6;30;30" keyTimes="0;.56;.78;1" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;.55;.57;.8;1" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="800" cy="210" r="5" fill="#6C4CF0" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.55;.57;.94;1" dur="4s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- cursor riding the filtered route -->
+    <g>
+      <animateMotion dur="4s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;.42;1" calcMode="linear">
+        <mpath href="#route"/>
+      </animateMotion>
+      <path d="M0 0L0 17L4.5 12.5L8 20L11 18.6L7.6 11.4L13.5 11.4Z" fill="#14171A" stroke="#FDFDFE" stroke-width="1.4" stroke-linejoin="round"/>
+    </g>
+
+    <text x="486" y="350" fill="#4A5157" textLength="300" lengthAdjust="spacingAndGlyphs">ONSET → FREEZE → CLICK AT PRE-ONSET CURSOR</text>
+  </g>
+
+  <!-- pinch panel -->
+  <g font-family="'JetBrains Mono','Cascadia Mono',Consolas,'Courier New',monospace" font-size="11" fill="#828A90">
+    <rect x="950" y="52" width="220" height="316" rx="10" fill="#FDFDFE" stroke="#D3D7DB"/>
+    <text x="966" y="78" textLength="150" lengthAdjust="spacingAndGlyphs">HAND · THUMB-INDEX</text>
+    <g transform="translate(1060 214)" stroke-linecap="round" fill="none">
+      <!-- palm and curled fingers -->
+      <path d="M-34 70 C -40 40, -36 18, -20 8 L 22 8 C 36 14, 40 40, 34 70" stroke="#14171A" stroke-width="3" fill="#F7F8F9"/>
+      <path d="M-4 8 A8 8 0 0 1 12 8M12 9 A8 8 0 0 1 27 13" stroke="#14171A" stroke-width="3"/>
+      <!-- index finger, bends a little toward the thumb when pinching -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="0 -14 8;0 -14 8;-9 -14 8;-9 -14 8;0 -14 8" keyTimes="0;.42;.54;.82;1" dur="4s" repeatCount="indefinite"/>
+        <path d="M-14 8 L-14 -78" stroke="#14171A" stroke-width="12"/>
+        <path d="M-14 8 L-14 -78" stroke="#FDFDFE" stroke-width="6"/>
+        <circle cx="-14" cy="-80" r="5" fill="#6C4CF0" stroke="none"/>
+      </g>
+      <!-- thumb, swings in to meet the index tip -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="0 -30 40;0 -30 40;34 -30 40;34 -30 40;0 -30 40" keyTimes="0;.42;.54;.82;1" dur="4s" repeatCount="indefinite"/>
+        <path d="M-30 40 L-74 -18" stroke="#14171A" stroke-width="12"/>
+        <path d="M-30 40 L-74 -18" stroke="#FDFDFE" stroke-width="6"/>
+        <circle cx="-75" cy="-20" r="5" fill="#E8A200" stroke="none"/>
+      </g>
+    </g>
+    <!-- aperture meter -->
+    <text x="966" y="316" fill="#4A5157" textLength="132" lengthAdjust="spacingAndGlyphs">APERTURE / PALM</text>
+    <rect x="966" y="326" width="188" height="10" rx="5" fill="#ECEEF0"/>
+    <rect x="966" y="326" width="150" height="10" rx="5" fill="#6C4CF0">
+      <animate attributeName="width" values="150;150;22;22;150" keyTimes="0;.42;.54;.82;1" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <path d="M1007 322V340" stroke="#E8A200" stroke-width="2"/>
+  </g>
+</svg>
